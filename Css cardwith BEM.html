@@ -1,0 +1,41 @@
+<head>
+
+    <title>
+        CSS card with BEM
+    </title>
+</head>
+<style>
+    .card{
+         background-color: black;
+         color: white;
+         width: 210px;
+         height: 480px;
+         padding: 10px;
+    
+    }
+    .card__button{
+        background-color: lavender;
+        color: yellowgreen;
+        border: solid 2px white;
+
+    }
+    .card__button:hover{
+        background-color: beige;
+        color: red;
+    }
+    
+    <!--Modifier-->
+    .card--buttonred
+    {
+        background-color: black;
+    }
+</style>
+
+<!-- Block and Element here card as block and remaining as element-->
+<div class="card">
+    <img class="card__img" src="https://picsum.photos/200">
+    <h2 class="card__title">Ooty :Queen of hills</h2>
+    <p class="card__descript">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam recusandae, ab perspiciatis excepturi molestias ullam laborum, iusto voluptas nisi culpa, laudantium nam reiciendis quia necessitatibus accusantium et? Hic, commodi voluptates?</p>
+    <button class="card__button">Checkout</button>
+    <button class="card__button card--buttonred"> Delete</button>
+</div
